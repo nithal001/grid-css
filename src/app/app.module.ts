@@ -7,12 +7,14 @@ import { GridLayoutComponent } from './grid-layout/grid-layout.component';
 
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { AboutGridsComponent } from './about-grids/about-grids.component';
+import { GridPropertiesComponent } from './grid-properties/grid-properties.component';
 @NgModule({
   declarations: [
     AppComponent,
     SidebarComponent,
     GridLayoutComponent,
-    AboutGridsComponent
+    AboutGridsComponent,
+    GridPropertiesComponent
   ],
   imports: [
     BrowserModule,

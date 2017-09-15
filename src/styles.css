@@ -1,6 +1,6 @@
 
 html, body{
-font-family: 'Open Sans', sans-serif;
+font-family: Roboto,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
  font-size: 100%;
  background: #FFf;
  margin: 0;
@@ -15,7 +15,7 @@ body a {
 	-ms-transition:0.5s all;
 }
 @font-face {
-   font-family: 'Montserrat-Regular';
+   font-family: Roboto,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
    /*src: url(../fonts/Montserrat-Regular.ttf)format('truetype');*/
 }
 a:hover,h5.inner.two a:hover{
@@ -35,6 +35,12 @@ h1,h2,h3,h4,h5,h6{
    font-weight:700;
 
 }
+p, ul li {
+    font-family: Roboto,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    color: #333;
+}
 p{
 	margin:0;
 	font-family: 'Open Sans', sans-serif;
@@ -43,8 +49,17 @@ ul{
 	margin:0;
 	padding:0;
 }
+
+.img-responsive {
+    width: 100%;
+    height: auto;
+}
+
 label{
 	margin:0;
+}
+.grid-section ul {
+    margin: 20px 0 0 20px;
 }
 .top-header {
           padding: 0em 2em;
