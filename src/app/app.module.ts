@@ -8,13 +8,15 @@ import { GridLayoutComponent } from './grid-layout/grid-layout.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { AboutGridsComponent } from './about-grids/about-grids.component';
 import { GridPropertiesComponent } from './grid-properties/grid-properties.component';
+import { FlexGridComponent } from './flex-grid/flex-grid.component';
 @NgModule({
   declarations: [
     AppComponent,
     SidebarComponent,
     GridLayoutComponent,
     AboutGridsComponent,
-    GridPropertiesComponent
+    GridPropertiesComponent,
+    FlexGridComponent
   ],
   imports: [
     BrowserModule,
