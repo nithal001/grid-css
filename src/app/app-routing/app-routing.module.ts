@@ -5,11 +5,12 @@ import { GridLayoutComponent } from '../grid-layout/grid-layout.component';
 import { AboutGridsComponent } from '../about-grids/about-grids.component';
 import { GridPropertiesComponent } from '../grid-properties/grid-properties.component';
 import { FlexGridComponent } from '../flex-grid/flex-grid.component';
+import { BasicTerminologyComponent } from '../basic-terminology/basic-terminology.component';
 
 const routes: Routes = [
     {
-        path: 'flex-grid',
-        component: FlexGridComponent,
+        path: 'basic',
+        component: BasicTerminologyComponent,
     },
     {
         path: 'grid-properties',
