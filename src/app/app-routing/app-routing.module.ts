@@ -13,6 +13,10 @@ const routes: Routes = [
         component: BasicTerminologyComponent,
     },
     {
+        path: 'flex-grid',
+        component: FlexGridComponent,
+    },
+    {
         path: 'grid-properties',
         component: GridPropertiesComponent,
     },
