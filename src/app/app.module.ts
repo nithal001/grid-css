@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
@@ -10,6 +11,10 @@ import { AboutGridsComponent } from './about-grids/about-grids.component';
 import { GridPropertiesComponent } from './grid-properties/grid-properties.component';
 import { FlexGridComponent } from './flex-grid/flex-grid.component';
 import { BasicTerminologyComponent } from './basic-terminology/basic-terminology.component';
+import { ModalTemplateAreaComponent } from './modal-template-area/modal-template-area.component';
+import { ModalTemplateJustifyComponent } from './modal-template-justify/modal-template-justify.component';
+import { ModalTemplateAlignComponent } from './modal-template-align/modal-template-align.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,13 +23,18 @@ import { BasicTerminologyComponent } from './basic-terminology/basic-terminology
     AboutGridsComponent,
     GridPropertiesComponent,
     FlexGridComponent,
-    BasicTerminologyComponent
+    BasicTerminologyComponent,
+    ModalTemplateAreaComponent,
+    ModalTemplateJustifyComponent,
+    ModalTemplateAlignComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule.forRoot()
   ],
   providers: [],
+  entryComponents: [ModalTemplateAreaComponent, ModalTemplateJustifyComponent, ModalTemplateAlignComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
