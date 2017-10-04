@@ -14,6 +14,8 @@ import { BasicTerminologyComponent } from './basic-terminology/basic-terminology
 import { ModalTemplateAreaComponent } from './modal-template-area/modal-template-area.component';
 import { ModalTemplateJustifyComponent } from './modal-template-justify/modal-template-justify.component';
 import { ModalTemplateAlignComponent } from './modal-template-align/modal-template-align.component';
+import { ModalJustifyContentComponent } from './modal-justify-content/modal-justify-content.component';
+import { ModalAlignContentComponent } from './modal-align-content/modal-align-content.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { ModalTemplateAlignComponent } from './modal-template-align/modal-templa
     BasicTerminologyComponent,
     ModalTemplateAreaComponent,
     ModalTemplateJustifyComponent,
-    ModalTemplateAlignComponent
+    ModalTemplateAlignComponent,
+    ModalJustifyContentComponent,
+    ModalAlignContentComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +38,8 @@ import { ModalTemplateAlignComponent } from './modal-template-align/modal-templa
     NgbModule.forRoot()
   ],
   providers: [],
-  entryComponents: [ModalTemplateAreaComponent, ModalTemplateJustifyComponent, ModalTemplateAlignComponent],
+  entryComponents: [ModalTemplateAreaComponent, ModalTemplateJustifyComponent, ModalTemplateAlignComponent,
+  ModalJustifyContentComponent, ModalAlignContentComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
