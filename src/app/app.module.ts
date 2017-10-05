@@ -16,6 +16,7 @@ import { ModalTemplateJustifyComponent } from './modal-template-justify/modal-te
 import { ModalTemplateAlignComponent } from './modal-template-align/modal-template-align.component';
 import { ModalJustifyContentComponent } from './modal-justify-content/modal-justify-content.component';
 import { ModalAlignContentComponent } from './modal-align-content/modal-align-content.component';
+import { GridChildPropertiesComponent } from './grid-child-properties/grid-child-properties.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ModalAlignContentComponent } from './modal-align-content/modal-align-co
     ModalTemplateJustifyComponent,
     ModalTemplateAlignComponent,
     ModalJustifyContentComponent,
-    ModalAlignContentComponent
+    ModalAlignContentComponent,
+    GridChildPropertiesComponent
   ],
   imports: [
     BrowserModule,
