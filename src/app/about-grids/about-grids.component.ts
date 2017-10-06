@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CommonService } from '../common.service';
 
 @Component({
   selector: 'app-about-grids',
@@ -6,10 +7,28 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about-grids.component.css']
 })
 export class AboutGridsComponent implements OnInit {
+    data: any;
+    filterData: any;
+    value: string;
+    title: string;
+    description: Array<boolean> = [];
 
-  constructor() { }
+  constructor(private commonService: CommonService) { }
 
   ngOnInit() {
+      this.value = 'about-grids';
+      this.getFullData();
   }
 
+  getFullData() {
+      this.commonService.getData()
+        .subscribe(
+            data => {
+                this.data = data;
+                this.filterData = this.data[this.value] ? this.data[this.value] : [];
+                this.title = this.filterData.heading;
+                this.description = this.filterData.description;
+            }
+        );
+  }
 }

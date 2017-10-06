@@ -1,11 +1,14 @@
-<h1>Introduction</h1>
-<ul>
+<h1>{{title}}</h1>
+<!-- <ul>
     <li>CSS Grid Layout is the most powerful layout system available in CSS. It is a 2-dimensional system, meaning it can handle both columns and rows.</li>
     <li>You work with Grid Layout by applying CSS rules both to a parent element (which becomes the Grid Container) and to that elements children (which become Grid Items).</li>
     <li>CSS Grid Layout (aka "Grid"), is a two-dimensional grid-based layout system that aims to do nothing less than completely change the way we design grid-based user interfaces.</li>
     <li>CSS has always been used to lay out our web pages, but it's never done a very good job of it.</li>
     <li>First we used tables, then floats, positioning and inline-block, but all of these methods were essentially hacks and left out a lot of important functionality (vertical centering, for instance). </li>
     <li>Flexbox helped out, but it's intended for simpler one-dimensional layouts, not complex two-dimensional ones (Flexbox and Grid actually work very well together). </li>
+</ul> -->
+<ul>
+    <li *ngFor="let item of description">{{item}}</li>
 </ul>
 <br />
 <h1>Grid Support</h1>

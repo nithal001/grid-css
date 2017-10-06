@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
@@ -17,6 +18,8 @@ import { ModalTemplateAlignComponent } from './modal-template-align/modal-templa
 import { ModalJustifyContentComponent } from './modal-justify-content/modal-justify-content.component';
 import { ModalAlignContentComponent } from './modal-align-content/modal-align-content.component';
 import { GridChildPropertiesComponent } from './grid-child-properties/grid-child-properties.component';
+
+import { CommonService } from './common.service';
 
 @NgModule({
   declarations: [
@@ -37,9 +40,10 @@ import { GridChildPropertiesComponent } from './grid-child-properties/grid-child
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpModule,
     NgbModule.forRoot()
   ],
-  providers: [],
+  providers: [CommonService],
   entryComponents: [ModalTemplateAreaComponent, ModalTemplateJustifyComponent, ModalTemplateAlignComponent,
   ModalJustifyContentComponent, ModalAlignContentComponent],
   bootstrap: [AppComponent]
