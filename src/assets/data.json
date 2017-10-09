@@ -8,7 +8,9 @@
             "CSS has always been used to lay out our web pages, but it's never done a very good job of it.",
             "First we used tables, then floats, positioning and inline-block, but all of these methods were essentially hacks and left out a lot of important functionality (vertical centering, for instance).",
             "Flexbox helped out, but it's intended for simpler one-dimensional layouts, not complex two-dimensional ones (Flexbox and Grid actually work very well together)."
-        ]
+        ],
+        "sub_title": "Grid Support",
+        "image_url": "assets/images/support.jpg"
     },
     "flex-grid": {
         "heading": "FlexBox vs Grid",
@@ -19,5 +21,26 @@
             "This improved on the box model by giving designers more control over the layout without needing to use floats and clears.",
             "In Flex, you can flow elements in either rows or columns (but not both simultaneously) by creating flex containers and within those, flex items."
         ]
+    },
+    "basic-terminology": {
+        "title": "Basic Terminologies",
+        "sub_title": "Grid Container",
+        "paragraph_one": "Every website, or application layout you make (or have seen) is essentially, boxes placed within certain defined boundaries.",
+        "image_grid_layout": "assets/images/grid-layout.gif",
+        "paragraph_two": "In very simple terms, a grid is just “lines”. Horizontal and vertical lines that define the placement of other design elements.",
+        "paragraph_three": "The element on which display: grid is applied. It's the direct parent of all the grid items. In this example container is the grid container.",
+        "image_container": "assets/images/container.jpg",
+        "grid_line": "Grid Line",
+        "grid_line_paragraph": "The dividing lines that make up the structure of the grid. They can be either vertical ('column grid lines') or horizontal ('row grid lines') and reside on either side of a row or column. Here the yellow line is an example of a column grid line.",
+        "grid_line_image": "assets/images/grid_line.jpg",
+        "grid_track": "Grid Track",
+        "grid_track_paragraph": "The space between two adjacent grid lines. You can think of them like the columns or rows of the grid. Here's the grid track between the second and third row grid lines.",
+        "grid_track_image": "assets/images/grid_track.jpg",
+        "grid_cell": "Grid Cell",
+        "grid_cell_paragraph": "The space between two adjacent row and two adjacent column grid lines. It's a single 'unit' of the grid. Here's the grid cell between row grid lines 1 and 2, and column grid lines 2 and 3.",
+        "grid_cell_image": "assets/images/grid_cell.jpg",
+        "grid_area": "Grid Area",
+        "grid_area_paragraph": "The total space surrounded by four grid lines. A grid area may be comprised of any number of grid cells. Here's the grid area between row grid lines 1 and 3, and column grid lines 1 and 3.",
+        "grid_area_image": "assets/images/grid_area.jpg"
     }
 }

@@ -11,6 +11,8 @@ export class AboutGridsComponent implements OnInit {
     filterData: any;
     value: string;
     title: string;
+    subTitle: string;
+    imageUrl: string;
     description: Array<boolean> = [];
 
   constructor(private commonService: CommonService) { }
@@ -28,6 +30,8 @@ export class AboutGridsComponent implements OnInit {
                 this.filterData = this.data[this.value] ? this.data[this.value] : [];
                 this.title = this.filterData.heading;
                 this.description = this.filterData.description;
+                this.subTitle = this.filterData.sub_title;
+                this.imageUrl = this.filterData.image_url;
             }
         );
   }
