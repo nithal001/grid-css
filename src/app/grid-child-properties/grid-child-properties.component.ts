@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
+import { ModalChildGridComponent } from '../modal-child-grid/modal-child-grid.component';
 
 @Component({
   selector: 'app-grid-child-properties',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GridChildPropertiesComponent implements OnInit {
 
-  constructor() { }
+  constructor(private modalService: NgbModal) { }
 
   ngOnInit() {
+  }
+
+  exampleTemplateGrid() {
+       const modalRef = this.modalService.open(ModalChildGridComponent);
   }
 
 }

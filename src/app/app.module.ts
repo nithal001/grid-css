@@ -20,6 +20,7 @@ import { ModalAlignContentComponent } from './modal-align-content/modal-align-co
 import { GridChildPropertiesComponent } from './grid-child-properties/grid-child-properties.component';
 
 import { CommonService } from './common.service';
+import { ModalChildGridComponent } from './modal-child-grid/modal-child-grid.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { CommonService } from './common.service';
     ModalTemplateAlignComponent,
     ModalJustifyContentComponent,
     ModalAlignContentComponent,
-    GridChildPropertiesComponent
+    GridChildPropertiesComponent,
+    ModalChildGridComponent
   ],
   imports: [
     BrowserModule,
@@ -45,7 +47,7 @@ import { CommonService } from './common.service';
   ],
   providers: [CommonService],
   entryComponents: [ModalTemplateAreaComponent, ModalTemplateJustifyComponent, ModalTemplateAlignComponent,
-  ModalJustifyContentComponent, ModalAlignContentComponent],
+  ModalJustifyContentComponent, ModalAlignContentComponent, ModalChildGridComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
