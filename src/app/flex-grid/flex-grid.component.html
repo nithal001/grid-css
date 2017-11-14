@@ -1,4 +1,62 @@
 <h1>{{heading}}</h1>
+<br />
+<h3>A Basic Layout Example</h3>
+<br />
+<img src="assets/images/grid-flex4.jpg"/><br /><br />
+<ul>
+    <li><a href="/flex-grid#prop-flexbox-solution">Flexbox Solution</a></li>
+    <li><a href="/flex-grid#prop-grid-solution">Grid Solution</a></li>
+    <li><a href="/flex-grid#prop-grid-examples">Examples</a></li>
+</ul>
+<br />
+<div id="prop-flexbox-solution">
+    <h3>FlexBox Solution</h3>
+    <br />
+    <p>We'll start off with the flexbox solution. We add display: flex to the container and direction its children vertically. This will position all the sections one under another.</p>
+    <br />
+    <img src="assets/images/grid-flex1.jpg"/>
+    <br /><br />
+    <p>Now we need to make the main section and the sidebar stand next to each other. Since flex containers are generally one-directional, we will need to add a wrapper element.</p>
+    <br />
+    <img src="assets/images/grid-flex2.jpg"/>
+    <br /><br />
+    <p>We then make the wrapper display:flex and flex-direction it in the opposite direction.</p>
+    <br />
+    <img src="assets/images/grid-flex3.jpg"/>
+    <br /><br />
+    <p>The last step is to set the size of the main section and the sidebar. We want the main content to be three times the size of the sidebar, which isn't hard to do with flex or percentages.
+    </p>
+    <br />
+    <img src="assets/images/grid-flex5.jpg"/>
+</div>
+<br />
+<br />
+<div id="prop-grid-solution">
+    <h3>Grid Solution</h3>
+    <br />
+    <p>There are a couple of different ways to use the CSS grid, but we will go with the grid-template-areas syntax, as it seems most suitable for what we are trying to accomplish.</p>
+    <br />
+    <img src="assets/images/grid-flex6.jpg"/>
+    <br /><br />
+    <img src="assets/images/grid-flex7.jpg"/>
+    <br /><br />
+    <p>Then we can set up our grid and assign the placement of each area. The code below may seem quite complicated at first, but once you get to know the grid system it becomes really easy to grasp.</p>
+    <br /><br />
+    <img src="assets/images/grid-flex8.jpg"/>
+    <br /><br />
+</div>
+<div id="prop-grid-examples">
+    <h3>Examples</h3>
+    <br />
+    <iframe height='465' scrolling='no' title='CSS Grid Layout - responsive gallery demo' src='//codepen.io/stacy/embed/gLxONO/?height=265&theme-id=0&default-tab=css,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/stacy/pen/gLxONO/'>CSS Grid Layout - responsive gallery demo</a> by Stacy (<a href='https://codepen.io/stacy'>@stacy</a>) on <a href='https://codepen.io'>CodePen</a>.
+    </iframe>
+    <br /><br />
+    <iframe height='465' scrolling='no' title='How to Build a News Website Layout with Flexbox' src='//codepen.io/tutsplus/embed/Wxbvdp/?height=265&theme-id=0&default-tab=html,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/tutsplus/pen/Wxbvdp/'>How to Build a News Website Layout with Flexbox</a> by Envato Tuts+ (<a href='https://codepen.io/tutsplus'>@tutsplus</a>) on <a href='https://codepen.io'>CodePen</a>.
+    </iframe>
+    <iframe height='465' scrolling='no' title='CSS Grid Layout Demo 5 - Grid Gap' src='//codepen.io/stacy/embed/YGxoEG/?height=265&theme-id=0&default-tab=css,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/stacy/pen/YGxoEG/'>CSS Grid Layout Demo 5 - Grid Gap</a> by Stacy (<a href='https://codepen.io/stacy'>@stacy</a>) on <a href='https://codepen.io'>CodePen</a>.
+    </iframe>
+    <br /><br />
+</div>
 <ul>
     <li *ngFor="let item of lists">{{item}}</li>
 </ul>

@@ -21,6 +21,12 @@ import { GridChildPropertiesComponent } from './grid-child-properties/grid-child
 
 import { CommonService } from './common.service';
 import { ModalChildGridComponent } from './modal-child-grid/modal-child-grid.component';
+import { ModalChildGridJustifyComponent } from './modal-child-grid-justify/modal-child-grid-justify.component';
+import { ModalHeaderComponent } from './modal-header/modal-header.component';
+import { ModalFooterComponent } from './modal-footer/modal-footer.component';
+import { ModalGridChildAlignComponent } from './modal-grid-child-align/modal-grid-child-align.component';
+import { GridSupportComponent } from './grid-support/grid-support.component';
+import { ThankYouComponent } from './thank-you/thank-you.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +43,13 @@ import { ModalChildGridComponent } from './modal-child-grid/modal-child-grid.com
     ModalJustifyContentComponent,
     ModalAlignContentComponent,
     GridChildPropertiesComponent,
-    ModalChildGridComponent
+    ModalChildGridComponent,
+    ModalChildGridJustifyComponent,
+    ModalHeaderComponent,
+    ModalFooterComponent,
+    ModalGridChildAlignComponent,
+    GridSupportComponent,
+    ThankYouComponent
   ],
   imports: [
     BrowserModule,
@@ -46,8 +58,16 @@ import { ModalChildGridComponent } from './modal-child-grid/modal-child-grid.com
     NgbModule.forRoot()
   ],
   providers: [CommonService],
-  entryComponents: [ModalTemplateAreaComponent, ModalTemplateJustifyComponent, ModalTemplateAlignComponent,
-  ModalJustifyContentComponent, ModalAlignContentComponent, ModalChildGridComponent],
+  entryComponents: [
+      ModalTemplateAreaComponent,
+      ModalTemplateJustifyComponent,
+      ModalTemplateAlignComponent,
+      ModalJustifyContentComponent,
+      ModalAlignContentComponent,
+      ModalChildGridComponent,
+      ModalChildGridJustifyComponent,
+      ModalGridChildAlignComponent
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

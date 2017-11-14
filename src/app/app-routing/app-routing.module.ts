@@ -6,8 +6,18 @@ import { GridPropertiesComponent } from '../grid-properties/grid-properties.comp
 import { FlexGridComponent } from '../flex-grid/flex-grid.component';
 import { BasicTerminologyComponent } from '../basic-terminology/basic-terminology.component';
 import { GridChildPropertiesComponent } from '../grid-child-properties/grid-child-properties.component';
+import { GridSupportComponent } from '../grid-support/grid-support.component';
+import { ThankYouComponent } from '../thank-you/thank-you.component';
 
 const routes: Routes = [
+    {
+        path: 'thank-you',
+        component: ThankYouComponent,
+    },
+    {
+        path: 'grid-support',
+        component: GridSupportComponent,
+    },
     {
         path: 'grid-child-properties',
         component: GridChildPropertiesComponent,
